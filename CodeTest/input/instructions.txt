@@ -1,0 +1,19 @@
+﻿Please study the example input files in the directory ./input_files and
+the sample output ./model_output.txt. Develop a program that reads the input
+files and produces the outputs as shown in ./model_output.txt.
+
+You can use any of the following languages to do this:
+
+- Java
+- JavaScript
+- Groovy
+- Python
+- Ruby
+
+We also would like to see that your work is accompanied by a set of unit
+tests. Please bring your work to the interview, so we can discuss it.
+
+You can use the editor or IDE of your choice, but please make sure you bring it
+to the interview, so you can make some modifications to it. If you don't own a
+laptop, please let us know we will provide you with a virtual machine that you
+can use.
