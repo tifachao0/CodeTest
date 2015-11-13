@@ -62,29 +62,29 @@ class TestTableMethods(unittest.TestCase):
         self.t1.populate_table(dict_pipe)
 
         # get print output
-        stdout_ = sys.stdout # save stdout to value
+        defaultStdout = sys.stdout # save stdout to value
         printOutput = StringIO()
         sys.stdout = printOutput
         self.t1.print_entries([1], ['last_name', 'first_name'])
-        sys.stdout = stdout_
+        sys.stdout = defaultStdout
 
         self.assertEqual(printOutput.getvalue(), 'Smith Steve\n')
 
     def test_modelOutput(self):
 
-        # get print output
-        stdout_ = sys.stdout # save stdout to value
+        # get print output from table
+        defaultStdout = sys.stdout # save stdout to value
         printOutput = StringIO()
         sys.stdout = printOutput
         model_output.output()
-        sys.stdout = stdout_
+        sys.stdout = defaultStdout
 
         # get content of model_output.txt
         f = open("../input/model_output.txt")
         txt = f.read()
         f.close()
 
-        #self.assertEqual(printOutput.getvalue(), txt)
+        self.assertEqual(printOutput.getvalue(), txt)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestTableMethods)
 unittest.TextTestRunner(verbosity=2).run(suite)

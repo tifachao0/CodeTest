@@ -13,7 +13,7 @@ def get_input():
 # produce table output
 def output_table(table, indexes, keys):
     table.print_entries(indexes, keys)
-    print('\n')
+    print('\n'),
 
 # produce output equivalent to content in model_output.txt
 def output():
@@ -24,8 +24,10 @@ def output():
 
     print('Output 1:')
     output_table(t1, [2, 9, 1, 3, 7, 8, 5, 6, 4], ['last_name', 'first_name', 'gender', 'birth_date', 'color'])
+
     print('Output 2:')
     output_table(t1, [7, 9, 8, 3, 5, 6, 1, 2, 4], ['last_name', 'first_name', 'gender', 'birth_date', 'color'])
+
     print('Output 3:')
     output_table(t1, [4, 3, 1, 9, 2, 6, 5, 8, 7], ['last_name', 'first_name', 'gender', 'birth_date', 'color'])
 
